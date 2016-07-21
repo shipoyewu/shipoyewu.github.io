@@ -9155,13 +9155,13 @@ $src$
 <div created="20160714132130915" modified="20160717000336954" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20160714131725966" modified="20160717000424439" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20160714131725966" modified="20160720000859362" title="$:/state/tab/sidebar--1835078512">
+<pre>TableOfContents</pre>
 </div>
 <div created="20160714131715245" modified="20160714131715245" title="$:/state/toc/TableOfContents-About--81657105">
 <pre>open</pre>
 </div>
-<div created="20160714131819425" modified="20160717000407992" title="$:/state/toc/TableOfContents-BigData--81657105">
+<div created="20160714131819425" modified="20160720002027527" title="$:/state/toc/TableOfContents-BigData--81657105">
 <pre>open</pre>
 </div>
 <div created="20160714134132681" modified="20160714134132681" title="$:/state/toc/TableOfContents-BigData-497309061">
@@ -9171,7 +9171,7 @@ $src$
 <pre>&lt;div class=&quot;tc-static-alert&quot;&gt;&lt;div class=&quot;tc-static-alert-inner&quot;&gt;This page is part of a static HTML representation of the ~TiddlyWiki at http://tiddlywiki.com/&lt;/div&gt;&lt;/div&gt;
 </pre>
 </div>
-<div list="" title="$:/StoryList">
+<div list="BigData" title="$:/StoryList">
 <pre></pre>
 </div>
 <div title="$:/SVGExampleRadius">
@@ -9469,6 +9469,13 @@ $src$
 </div>
 <div title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
+</div>
+<div created="20160720000900952" modified="20160720002010306" tags="BigData" title="并行化的三个范式">
+<pre>*M范式，M方式的含义是本地计算，即每个机器计算整个数据的一部分，对处理之后的数据不再进行任何处理。M范式中各个机器的进程间无依赖。
+*MSR范式，MSR范式是Map-Shuffle-Reduce的缩写，也就是著名的Map-Reduce模型，他的处理过程为：每台机器先处理整个数据集中的一部分，接着对每一轮处理后的数据进行洗牌。按照规则重新组合，然后对重组之后的数据进行第二轮处理。MSR中的各个机器的进程之间无影响，但是要对结果结进行在处理。MSR范式比较适合I/O密集的作业。
+*BSP范式，BSP范式的中文翻译为，“整体同步并行计算模型”，他的处理过程是每台机器上的进程处理数据集中的一部分，并且根据自身处理的过度先后进入阻塞的状态，待第一轮的全部处理结束之后，进行第二轮计算，一直循环往复直至所有进程结束。BSP比较适合CPU密集型的作业，特别是机器学习任务。
+
+</pre>
 </div>
 <div created="20150325170720682" modified="20150926171049725" tags="HelloThere" title="A Gentle Guide to TiddlyWiki" type="text/vnd.tiddlywiki">
 <pre>TiddlyWiki is an incredibly flexible and versatile tool that is conceived and constructed differently than most software. This can make it hard to understand until the moment when it clicks, and becomes a seamless extension of your brain.
@@ -10091,8 +10098,7 @@ The &lt;&lt;.olink is&gt;&gt; operator is similar, but its scope is restricted t
 </pre>
 </div>
 <div created="20160716235712514" modified="20160717000322545" tags="BigData" title="ambari安装时的几个脚本命令">
-<pre>
-```
+<pre>```
 for x in `cat machies`; do scp /root/.ssh/id_rsa.pub root@$x:/root/.ssh; done;
 ```
 ```
@@ -10230,8 +10236,8 @@ Automatic saving can be enabled or disabled through the ''Settings'' tab of the 
 <div caption="bf" created="20140410103123179" modified="20150203183738000" op-purpose="same as &lt;&lt;.olink rest&gt;&gt;" tags="[[Filter Operators]] [[Order Operators]]" title="bf Operator" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20160714131622543" modified="20160714131713503" tags="TableOfContents" title="BigData">
-<pre>2016年云创大数据培训的一些内容</pre>
+<div created="20160714131622543" modified="20160720002105437" tags="TableOfContents" title="BigData">
+<pre>2016年云创大数据培训的一些内容，还有自己看书的总结。</pre>
 </div>
 <div caption="Block Quotes" created="20131206154636572" modified="20160607092444424" tags="WikiText" title="Block Quotes in WikiText" type="text/vnd.tiddlywiki">
 <pre>There are two ways to produce HTML block quotes in TiddlyWiki5, one for content spread across multiple lines, and one for single line content.
